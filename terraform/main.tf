@@ -48,6 +48,7 @@ resource "aws_security_group" "flask_app_sg" {
 resource "aws_instance" "flask_app" {
   ami           = var.ami_id
   instance_type = var.instance_type
+  key_name      = var.key_name
   
   security_groups = [aws_security_group.flask_app_sg.name]
 

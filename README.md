@@ -21,9 +21,22 @@ git push -u origin main
 ```
 
 ### 2. Set up GitHub Secrets
-Add these secrets in GitHub repository settings:
-- `DOCKER_USERNAME`: usman966
-- `DOCKER_PASSWORD`: Your Docker Hub password
+Add these secrets in GitHub repository settings (Settings → Secrets and variables → Actions → New repository secret):
+
+**Docker Hub Credentials:**
+- `DOCKER_USERNAME`: `usman966`
+- `DOCKER_PASSWORD`: `Usman@2005`
+
+**AWS EC2 SSH Access:**
+- `EC2_HOST`: `100.48.56.146` (Current EC2 public IP)
+- `EC2_USERNAME`: `ec2-user` (Default for Amazon Linux)
+- `EC2_SSH_KEY`: Your private SSH key content (usman-deploy-key.pem)
+
+To get your SSH key content:
+```bash
+cat ~/.ssh/usman-deploy-key.pem
+```
+Copy the entire output including `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----`
 
 ### 3. Deploy Infrastructure
 ```bash
@@ -34,7 +47,14 @@ terraform apply
 ```
 
 ### 4. Access Application
-After deployment, access your app at: `http://<EC2_PUBLIC_IP>:5000`
+Application URL: **http://100.48.56.146:5000**
+
+## CI/CD Pipeline
+The pipeline automatically:
+1. **Build & Push**: Builds Docker image and pushes to Docker Hub
+2. **Deploy to EC2**: SSHs into EC2, pulls latest image, and restarts container
+
+Every push to `main` branch triggers the full pipeline!
 
 ## Tech Stack
 - Flask (Python web framework)
