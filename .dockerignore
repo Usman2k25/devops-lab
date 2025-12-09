@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.git
+.gitignore
+*.md
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
