@@ -49,11 +49,11 @@ def hello_world():
         </head>
         <body>
             <div class="container">
-                <h1>🚀 Hello World!</h1>
-                <p>DevOps Lab Project by Usman</p>
-                <p style="font-size: 1.2em; margin-top: 10px;">Automated CI/CD with GitHub Actions</p>
-                <div class="badge">✅ CI/CD Pipeline Active</div>
-                <div class="version">Version 1.2 - Auto-deployed via GitHub Actions</div>
+                <h1>🚀 Welcome to DevOps Lab!</h1>
+                <p>Created by Usman - Full Stack DevOps Engineer</p>
+                <p style="font-size: 1.2em; margin-top: 10px;">🔄 Automated CI/CD with GitHub Actions</p>
+                <div class="badge">✅ Pipeline Active & Running</div>
+                <div class="version">Version 1.3 - Live on AWS EC2 🌐</div>
             </div>
         </body>
     </html>
