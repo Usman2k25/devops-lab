@@ -40,6 +40,11 @@ def hello_world():
                     margin-top: 20px;
                     display: inline-block;
                 }
+                .version {
+                    margin-top: 20px;
+                    font-size: 0.9em;
+                    opacity: 0.8;
+                }
             </style>
         </head>
         <body>
@@ -48,6 +53,7 @@ def hello_world():
                 <p>DevOps Lab Project by Usman</p>
                 <p style="font-size: 1.2em; margin-top: 10px;">Automated CI/CD with GitHub Actions</p>
                 <div class="badge">✅ CI/CD Pipeline Active</div>
+                <div class="version">Version 1.2 - Auto-deployed via GitHub Actions</div>
             </div>
         </body>
     </html>
