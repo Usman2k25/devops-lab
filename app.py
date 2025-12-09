@@ -46,6 +46,7 @@ def hello_world():
             <div class="container">
                 <h1>🚀 Hello World!</h1>
                 <p>DevOps Lab Project by Usman</p>
+                <p style="font-size: 1.2em; margin-top: 10px;">Automated CI/CD with GitHub Actions</p>
                 <div class="badge">✅ CI/CD Pipeline Active</div>
             </div>
         </body>
