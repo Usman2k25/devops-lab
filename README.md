@@ -25,7 +25,7 @@ Add these secrets in GitHub repository settings (Settings → Secrets and variab
 
 **Docker Hub Credentials:**
 - `DOCKER_USERNAME`: `usman966`
-- `DOCKER_PASSWORD`: `Usman@2005`
+- `DOCKER_PASSWORD`: `******`
 
 **AWS EC2 SSH Access:**
 - `EC2_HOST`: `100.48.56.146` (Current EC2 public IP)
