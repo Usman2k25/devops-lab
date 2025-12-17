@@ -19,5 +19,5 @@ variable "ami_id" {
 variable "key_name" {
   description = "EC2 Key Pair name"
   type        = string
-  default     = "usman-deploy-key"
+  default     = "usman-deploy-key-new"
 }
